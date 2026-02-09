@@ -1,0 +1,18 @@
+Threads
+Collection framwork
+OOP 
+
+Junit,
+Spring 	
+	data (jpa, hibernate)
+	security
+	kafka
+	
+Notification system (email, whatsapp, sms or push notification) => invoice, payment reminder, offer 
+Invoicing system
+	Customer
+	Supplier
+	Product/Service
+	Orders
+	OrderProduct
+	GST reporting, revenue reporting, montly
