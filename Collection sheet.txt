@@ -1,0 +1,22 @@
+| Collection                             | Type         | Extends / Implements       | Order      | Duplicates | Thread-Safe | Common Methods               | Uses / Characteristics          |
+| -------------------------------------- | ------------ | -------------------------- | ---------- | ---------- | ----------- | ---------------------------- | ------------------------------- |
+| **ArrayList**                          | List         | `implements List`          | Insertion  | Yes        | No          | `add()`, `get()`, `remove()` | Fast access, most used          |
+| **LinkedList**                         | List / Deque | `implements List, Deque`   | Insertion  | Yes        | No          | `add()`, `remove()`          | Fast insert/delete              |
+| **Vector**                             | List         | `extends AbstractList`     | Insertion  | Yes        | Yes         | `add()`, `get()`             | Legacy                          |
+| **Stack**                              | List         | `extends Vector`           | LIFO       | Yes        | Yes         | `push()`, `pop()`            | Legacy stack                    |
+| **CopyOnWriteArrayList**               | List         | `implements List`          | Insertion  | Yes        | Yes         | `add()`, `get()`             | Read-heavy, thread-safe         |
+| **HashSet**                            | Set          | `implements Set`           | No         | No         | No          | `add()`, `contains()`        | Fast, unordered                 |
+| **LinkedHashSet**                      | Set          | `extends HashSet`          | Insertion  | No         | No          | `add()`                      | Ordered Set                     |
+| **TreeSet**                            | Set          | `implements NavigableSet`  | Sorted     | No         | No          | `add()`, `first()`           | Sorted                          |
+| **CopyOnWriteArraySet**                | Set          | `implements Set`           | Insertion  | No         | Yes         | `add()`                      | Thread-safe Set                 |
+| **HashMap**                            | Map          | `implements Map`           | No         | Keys No    | No          | `put()`, `get()`             | Most used Map                   |
+| **LinkedHashMap**                      | Map          | `extends HashMap`          | Insertion  | Keys No    | No          | `put()`, `get()`             | Ordered Map                     |
+| **TreeMap**                            | Map          | `implements NavigableMap`  | Sorted     | Keys No    | No          | `put()`, `firstKey()`        | Sorted Map                      |
+| **IdentityHashMap**                    | Map          | `implements Map`           | No         | Keys No    | No          | `put()`, `get()`             | Uses `==` instead of `equals()` |
+| **WeakHashMap**                        | Map          | `extends AbstractMap`      | No         | Keys No    | No          | `put()`, `get()`             | Keys removed by GC              |
+| **Hashtable**                          | Map          | `implements Map`           | No         | Keys No    | Yes         | `put()`, `get()`             | Legacy Map                      |
+| **ConcurrentHashMap**                  | Map          | `implements ConcurrentMap` | No         | Keys No    | Yes         | `put()`, `putIfAbsent()`     | High-perf thread-safe           |
+| **EnumMap**                            | Map          | `extends AbstractMap`      | Enum order | Keys No    | No          | `put()`, `get()`             | Very fast for enum keys         |
+| **PriorityQueue**                      | Queue        | `implements Queue`         | Priority   | Yes        | No          | `add()`, `poll()`            | Priority-based                  |
+| **ArrayDeque**                         | Deque        | `implements Deque`         | Insertion  | Yes        | No          | `add()`, `pop()`             | Stack & Queue                   |
+| **BlockingQueue (ArrayBlockingQueue)** | Queue        | `implements BlockingQueue` | FIFO       | Yes        | Yes         | `put()`, `take()`            | Producer–Consumer               |
